@@ -1,0 +1,93 @@
+<resources>
+    <string name="app_name">udacityQuizApp</string>
+
+
+    <string name="hintName">Name</string>
+
+    <!-- Question 1 -->
+    <string name="question1"> 1. The instrument that measures and records the relative humidity of air is:</string>
+
+    <!-- Question 2 -->
+    <string name="question2"> 2. Which of Newton\'s Three Laws does the following statement satisfy? For every action there is an equal and opposite reaction.</string>
+
+    <!-- Question 3 -->
+    <string name="question3"> 3. Which year did Albert Einstein acquire the Nobel prize? </string>
+
+    <string name="hint1">Answer</string>
+
+    <!-- Answer of question 3 -->
+    <string name="ansOne">1924</string>
+    <string name="ansTwo">1921</string>
+    <string name="ansThree">1925</string>
+
+    <!-- Question 4 -->
+    <string name="question4"> 4.The shape of our milky way galaxy is: </string>
+
+    <!-- Answers of question 4 -->
+    <string name="ansFour">circular</string>
+    <string name="ansFive">elliptical</string>
+    <string name="ansSix">spiral</string>
+
+    <!-- Question 5 -->
+    <string name="question5"> 5. What physics law describes how light acts in a prism? </string>
+
+    <!-- Answers of question 5 -->
+    <string name="ansSeven"> Beer-Lambert Law </string>
+    <string name="ansEight"> Snell\'s Law </string>
+    <string name="ansNine"> Kopp\'s Law </string>
+
+    <!-- Question 6 -->
+    <string name="question6"> 6. Which planets are nearest the sun?</string>
+
+    <!-- Answers of question 6 -->
+    <string name="planet1"> Venus </string>
+    <string name="planet2"> Mercury </string>
+    <string name="planet3"> Mars </string>
+
+    <!-- Question 7 -->
+    <string name="question7"> 7. If an object is in motion, what kind of energy does it possess? </string>
+
+    <!-- Answers of question 7 -->
+    <string name="energy1"> Potential  </string>
+    <string name="energy2"> Metabolic  </string>
+    <string name="energy3"> Kinetic  </string>
+
+    <!-- Question 8 -->
+    <string name="question8"> 8. What are the common scales of measuring temperature? </string>
+
+    <!-- Answers of question 8 -->
+    <string name="temperature1"> Kelvin </string>
+    <string name="temperature2"> Celsius </string>
+    <string name="temperature3"> Fahrenheit </string>
+
+    <!-- No name was given -->
+    <string name="no_name"> No name is given. </string>
+
+    <!-- Question word. [CHAR LIMIT = 20] -->
+    <string name="question">Question</string>
+
+    <!-- Is not answered phrase. [CHAR LIMIT = 30] -->
+    <string name="is_not_answered">is not answered.</string>
+
+    <!-- Displayed text at the end. [CHAR LIMIT = 40] -->
+    <string name="your_score_is">your score is </string>
+
+    <!-- Toast for getting a low score. [CHAR LIMIT = 100] -->
+    <string name="toast_score_1"> out of 110. Maybe give it another try?</string>
+
+    <!-- Toast for getting a medium score. [CHAR LIMIT = 100] -->
+    <string name="toast_score_2"> out of 110. Well done! But you can get a perfect score if you try again!</string>
+
+    <!-- Toast for getting a perfect score. [CHAR LIMIT = 100] -->
+    <string name="toast_score_3"> out of 110. Perfect score!! You\'re amazing!!</string>
+
+    <!-- Reset Button -->
+    <string name="reset"> Reset </string>
+
+    <!-- Submit Button -->
+    <string name="submit"> Submit </string>
+    <string name="enter_your_name">Enter your name</string>
+    <string name="start">Start</string>
+
+
+</resources>
