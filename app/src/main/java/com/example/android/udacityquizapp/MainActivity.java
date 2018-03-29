@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Intent intent = getIntent();
-        String name = intent.getStringExtra("name");
+        final String name = intent.getStringExtra("name");
         setup();
         //Gets name from the name field.
         nameUser.setText(name);
@@ -59,6 +59,7 @@ public class MainActivity extends AppCompatActivity {
         submitButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                score = 0;
                 questionOne();
                 questionTwo();
                 questionThree();
@@ -71,19 +72,19 @@ public class MainActivity extends AppCompatActivity {
                 //Displays final score in the toast view at the end of the app.
                 //Shows toast if the score is less than 30.
                 if (score < 30) {
-                    Toast.makeText(MainActivity.this, " " + getString(R.string.your_score_is) + " " + score + " " + getString(R.string.toast_score_1), Toast.LENGTH_LONG).show();
+                    Toast.makeText(MainActivity.this, getString(R.string.toast_score_1,name,score), Toast.LENGTH_LONG).show();
                 }
 
                 //Displays final score in the toast view at the end of the app.
                 //Shows toast if the score is less than 110.
                 else if (score < 110) {
-                    Toast.makeText(MainActivity.this, " " + getString(R.string.your_score_is) + " " + score + " " + getString(R.string.toast_score_2), Toast.LENGTH_LONG).show();
+                    Toast.makeText(MainActivity.this, getString(R.string.toast_score_2,name,score), Toast.LENGTH_LONG).show();
                 }
 
                 //Displays final score in the toast view at the end of the app.
                 //Shows toast if the score is 110 (Perfect game).
                 else if (score == 110) {
-                    Toast.makeText(MainActivity.this, " " + getString(R.string.your_score_is) + " " + score + " " + getString(R.string.toast_score_3), Toast.LENGTH_LONG).show();
+                    Toast.makeText(MainActivity.this, getString(R.string.toast_score_3,name,score), Toast.LENGTH_LONG).show();
                 }
             }
         });
@@ -123,7 +124,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
         //Checks whether the user has answered correctly in the question 1.
-        else if (ansOne.equals("Hygrometer") || ansOne.equals("hygrometer") || ansOne.equals("HYGROMETER") || ansOne.equals("hygrometer.")) {
+        else if (ansOne.equalsIgnoreCase("Hygrometer")  || ansOne.equalsIgnoreCase("hygrometer.")) {
             score += 10;
         } else {
             score += 0;
@@ -131,7 +132,6 @@ public class MainActivity extends AppCompatActivity {
 
         return score;
     }
-
 
     private int questionTwo() {
 
@@ -144,7 +144,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
         //Checks whether the user has answered correctly in the question 2.
-        else if (ansTwo.equals("Third law") || ansTwo.equals("third law") || ansTwo.equals("third law of Newton") || ansTwo.equals("Third law of Newton") || ansTwo.equals("Newton's third law")) {
+        else if (ansTwo.equalsIgnoreCase("Third law") || ansTwo.equalsIgnoreCase("third law of Newton") || ansTwo.equalsIgnoreCase("Newton's third law") || ansTwo.equalsIgnoreCase("Third")){
             score += 10;
         } else {
             score += 0;
@@ -188,7 +188,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
         //Checks whether the user has checked the right radio button in question 4 (correct answer is 4).
-        else if (answer_4_3) {
+        else if (answer_4_3 && !(answer_4_1) && !(answer_4_2)) {
             score += 10;
         } else {
             score += 0;
@@ -210,7 +210,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
         //Checks whether the user has checked the right radio button in question 5(correct answer is 3).
-        else if (answer_5_3) {
+        else if (answer_5_3 && !(answer_5_2) && !(answer_5_1)) {
             score += 10;
         } else {
             score += 0;
@@ -232,11 +232,11 @@ public class MainActivity extends AppCompatActivity {
         }
 
         //Checks whether the user has checked the right checkboxes in question 6 (correct answers are 1 and 2).
-        else if (answer_6_1 && answer_6_2) {
+        else if (answer_6_1 && answer_6_2 && !(answer_6_3)) {
             score += 20;
-        } else if (answer_6_1 && !(answer_6_2)) {
+        } else if (answer_6_1 && !(answer_6_2) && !(answer_6_3)) {
             score += 10;
-        } else if (!(answer_6_1) && answer_6_2) {
+        } else if (!(answer_6_1) && answer_6_2 && !(answer_6_3)) {
             score += 10;
         } else {
             score += 0;
@@ -309,21 +309,21 @@ public class MainActivity extends AppCompatActivity {
         answer3_1 = findViewById(R.id.date1);
         answer3_2 = findViewById(R.id.date2);
         answer3_3 = findViewById(R.id.date3);
-        answer4_1 = findViewById(R.id.date4);
-        answer4_2 = findViewById(R.id.date5);
-        answer4_3 = findViewById(R.id.date6);
-        answer5_1 = findViewById(R.id.law1);
-        answer5_2 = findViewById(R.id.law2);
-        answer5_3 = findViewById(R.id.law3);
-        answer6_1 = findViewById(R.id.planet1);
-        answer6_2 = findViewById(R.id.planet2);
-        answer6_3 = findViewById(R.id.planet3);
-        answer7_1 = findViewById(R.id.energyOne);
-        answer7_2 = findViewById(R.id.energyTwo);
-        answer7_3 = findViewById(R.id.energyThree);
-        answer8_1 = findViewById(R.id.temperatureOne);
-        answer8_2 = findViewById(R.id.temperatureTwo);
-        answer8_3 = findViewById(R.id.temperatureThree);
+        answer4_1 = findViewById(R.id.circular);
+        answer4_2 = findViewById(R.id.elliptical);
+        answer4_3 = findViewById(R.id.spiral);
+        answer5_1 = findViewById(R.id.beer_lambert_law);
+        answer5_2 = findViewById(R.id.kopps_law);
+        answer5_3 = findViewById(R.id.snells_law);
+        answer6_1 = findViewById(R.id.venus_planet);
+        answer6_2 = findViewById(R.id.mercury_planet);
+        answer6_3 = findViewById(R.id.mars_planet);
+        answer7_1 = findViewById(R.id.energy_potential);
+        answer7_2 = findViewById(R.id.energy_metabolic);
+        answer7_3 = findViewById(R.id.energy_kinetic);
+        answer8_1 = findViewById(R.id.temperatureKelvin);
+        answer8_2 = findViewById(R.id.temperatureCelsius);
+        answer8_3 = findViewById(R.id.temperatureFahrenheit);
         radioGroup3 = findViewById(R.id.radioGroup3);
         radioGroup4 = findViewById(R.id.radioGroup4);
         radioGroup5 = findViewById(R.id.radioGroup5);

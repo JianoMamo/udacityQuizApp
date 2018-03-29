@@ -114,7 +114,7 @@
             android:orientation="horizontal">
 
             <RadioButton
-                android:id="@+id/date4"
+                android:id="@+id/circular"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/dp45"
@@ -122,12 +122,12 @@
                 android:text="@string/ansFour" />
 
             <RadioButton
-                android:id="@+id/date5"
+                android:id="@+id/elliptical"
                 style="@style/styleRadioButton25dp"
                 android:text="@string/ansFive" />
 
             <RadioButton
-                android:id="@+id/date6"
+                android:id="@+id/spiral"
                 style="@style/styleRadioButton25dp"
                 android:text="@string/ansSix" />
 
@@ -151,18 +151,18 @@
             android:orientation="horizontal">
 
             <RadioButton
-                android:id="@+id/law1"
+                android:id="@+id/beer_lambert_law"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/ansSeven" />
 
             <RadioButton
-                android:id="@+id/law2"
+                android:id="@+id/kopps_law"
                 style="@style/change10dp"
                 android:text="@string/ansNine" />
 
             <RadioButton
-                android:id="@+id/law3"
+                android:id="@+id/snells_law"
                 style="@style/change10dp"
                 android:text="@string/ansEight" />
 
@@ -188,7 +188,7 @@
 
 
             <CheckBox
-                android:id="@+id/planet1"
+                android:id="@+id/venus_planet"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="45dp"
@@ -196,12 +196,12 @@
                 android:text="@string/planet1" />
 
             <CheckBox
-                android:id="@+id/planet2"
+                android:id="@+id/mercury_planet"
                 style="@style/change35dp"
                 android:text="@string/planet2" />
 
             <CheckBox
-                android:id="@+id/planet3"
+                android:id="@+id/mars_planet"
                 style="@style/change30dp"
                 android:text="@string/planet3" />
 
@@ -225,18 +225,18 @@
             android:orientation="horizontal">
 
             <CheckBox
-                android:id="@+id/energyOne"
+                android:id="@+id/energy_potential"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/energy1" />
 
             <CheckBox
-                android:id="@+id/energyTwo"
+                android:id="@+id/energy_metabolic"
                 style="@style/change35dp"
                 android:text="@string/energy2" />
 
             <CheckBox
-                android:id="@+id/energyThree"
+                android:id="@+id/energy_kinetic"
                 style="@style/change30dp"
                 android:text="@string/energy3" />
 
@@ -261,13 +261,13 @@
             android:orientation="horizontal">
 
             <CheckBox
-                android:id="@+id/temperatureOne"
+                android:id="@+id/temperatureKelvin"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/temperature1" />
 
             <CheckBox
-                android:id="@+id/temperatureTwo"
+                android:id="@+id/temperatureCelsius"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/dp55"
@@ -275,7 +275,7 @@
                 android:text="@string/temperature2" />
 
             <CheckBox
-                android:id="@+id/temperatureThree"
+                android:id="@+id/temperatureFahrenheit"
                 style="@style/change30dp"
                 android:text="@string/temperature3" />
 

@@ -70,16 +70,13 @@
     <string name="is_not_answered">is not answered.</string>
 
     <!-- Displayed text at the end. [CHAR LIMIT = 40] -->
-    <string name="your_score_is">your score is </string>
-
-    <!-- Toast for getting a low score. [CHAR LIMIT = 100] -->
-    <string name="toast_score_1"> out of 110. Maybe give it another try?</string>
+    <string name="toast_score_1"> %1$s, your score is %2$d out of 110. Maybe give it another try? </string>
 
     <!-- Toast for getting a medium score. [CHAR LIMIT = 100] -->
-    <string name="toast_score_2"> out of 110. Well done! But you can get a perfect score if you try again!</string>
+    <string name="toast_score_2">  %1$s, your score is %2$d out of 110. Well done! But you can get a perfect score if you try again!</string>
 
     <!-- Toast for getting a perfect score. [CHAR LIMIT = 100] -->
-    <string name="toast_score_3"> out of 110. Perfect score!! You\'re amazing!!</string>
+    <string name="toast_score_3">  %1$s, your score is %2$d out of 110. Perfect score!! You\'re amazing! Keep going!</string>
 
     <!-- Reset Button -->
     <string name="reset"> Reset </string>
