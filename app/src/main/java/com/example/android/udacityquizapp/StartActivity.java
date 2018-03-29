@@ -27,6 +27,7 @@ public class StartActivity extends AppCompatActivity {
                 if (playerName.equals("")) {
                     Toast.makeText(StartActivity.this, "Enter your name please", Toast.LENGTH_LONG).show();
                 }
+
                 else {
                     Intent intent = new Intent(StartActivity.this, MainActivity.class);
                     intent.putExtra("name", playerName);
@@ -34,7 +35,6 @@ public class StartActivity extends AppCompatActivity {
                 }
             }
         });
-
 
     }
 
@@ -46,5 +46,4 @@ public class StartActivity extends AppCompatActivity {
     private String getName(){
         return EditName.getText().toString();
     }
-
 }

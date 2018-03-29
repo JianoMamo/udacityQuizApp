@@ -94,7 +94,6 @@
 
         </RadioGroup>
 
-
         <!-- Question 4 -->
         <TextView
             style="@style/questionChanges"
@@ -104,7 +103,6 @@
             android:layout_marginStart="@dimen/dp10"
             android:layout_marginTop="@dimen/dp10"
             android:text="@string/question4" />
-
 
         <RadioGroup
             android:id="@+id/radioGroup4"
@@ -178,14 +176,12 @@
             android:layout_marginTop="@dimen/dp10"
             android:text="@string/question6" />
 
-
         <RadioGroup
             android:id="@+id/radioGroup6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:orientation="horizontal">
-
 
             <CheckBox
                 android:id="@+id/venus_planet"
@@ -217,7 +213,6 @@
             android:layout_marginTop="@dimen/dp10"
             android:text="@string/question7" />
 
-
         <RadioGroup
             android:id="@+id/radioGroup7"
             style="@style/change30dp"
@@ -239,7 +234,6 @@
                 android:id="@+id/energy_kinetic"
                 style="@style/change30dp"
                 android:text="@string/energy3" />
-
 
         </RadioGroup>
 
