@@ -39,8 +39,8 @@ public class StartActivity extends AppCompatActivity {
     }
 
     private void setup() {
-        EditName = findViewById(R.id.editName);
-        startButton = findViewById(R.id.startButton);
+        EditName = findViewById(R.id.et_Name);
+        startButton = findViewById(R.id.bt_Start);
     }
 
     private String getName(){

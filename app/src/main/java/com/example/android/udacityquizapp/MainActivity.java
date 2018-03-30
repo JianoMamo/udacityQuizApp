@@ -114,7 +114,6 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-
     private int questionOne() {
 
         String ansOne = answerOne.getText().toString().trim();
@@ -303,32 +302,32 @@ public class MainActivity extends AppCompatActivity {
 
     private void setup() {
 
-        nameUser = findViewById(R.id.name_edit_text);
-        answerOne = findViewById(R.id.answerOne_edit_text);
-        answerTwo = findViewById(R.id.answerTwo_edit_text);
-        answer3_1 = findViewById(R.id.date1);
-        answer3_2 = findViewById(R.id.date2);
-        answer3_3 = findViewById(R.id.date3);
-        answer4_1 = findViewById(R.id.circular);
-        answer4_2 = findViewById(R.id.elliptical);
-        answer4_3 = findViewById(R.id.spiral);
-        answer5_1 = findViewById(R.id.beer_lambert_law);
-        answer5_2 = findViewById(R.id.kopps_law);
-        answer5_3 = findViewById(R.id.snells_law);
-        answer6_1 = findViewById(R.id.venus_planet);
-        answer6_2 = findViewById(R.id.mercury_planet);
-        answer6_3 = findViewById(R.id.mars_planet);
-        answer7_1 = findViewById(R.id.energy_potential);
-        answer7_2 = findViewById(R.id.energy_metabolic);
-        answer7_3 = findViewById(R.id.energy_kinetic);
-        answer8_1 = findViewById(R.id.temperatureKelvin);
-        answer8_2 = findViewById(R.id.temperatureCelsius);
-        answer8_3 = findViewById(R.id.temperatureFahrenheit);
-        radioGroup3 = findViewById(R.id.radioGroup3);
-        radioGroup4 = findViewById(R.id.radioGroup4);
-        radioGroup5 = findViewById(R.id.radioGroup5);
-        submitButton = findViewById(R.id.button);
-        resetButton = findViewById(R.id.button1);
+        nameUser = findViewById(R.id.tv_Name);
+        answerOne = findViewById(R.id.et_answer_1);
+        answerTwo = findViewById(R.id.et_answer_2);
+        answer3_1 = findViewById(R.id.rb_date1_1924);
+        answer3_2 = findViewById(R.id.rb_date2_1921);
+        answer3_3 = findViewById(R.id.rb_date3_1925);
+        answer4_1 = findViewById(R.id.rb_circular);
+        answer4_2 = findViewById(R.id.rb_elliptical);
+        answer4_3 = findViewById(R.id.rb_spiral);
+        answer5_1 = findViewById(R.id.rb_beer_lambert_law);
+        answer5_2 = findViewById(R.id.rb_kopps_law);
+        answer5_3 = findViewById(R.id.rb_snells_law);
+        answer6_1 = findViewById(R.id.cb_venus_planet);
+        answer6_2 = findViewById(R.id.cb_mercury_planet);
+        answer6_3 = findViewById(R.id.cb_mars_planet);
+        answer7_1 = findViewById(R.id.cb_energy_potential);
+        answer7_2 = findViewById(R.id.cb_energy_metabolic);
+        answer7_3 = findViewById(R.id.cb_energy_kinetic);
+        answer8_1 = findViewById(R.id.cb_temperatureKelvin);
+        answer8_2 = findViewById(R.id.cb_temperatureCelsius);
+        answer8_3 = findViewById(R.id.cb_temperatureFahrenheit);
+        radioGroup3 = findViewById(R.id.rg_question_3);
+        radioGroup4 = findViewById(R.id.rg_question_4);
+        radioGroup5 = findViewById(R.id.rg_question_5);
+        submitButton = findViewById(R.id.bt_submit);
+        resetButton = findViewById(R.id.bt_reset);
     }
 
 }
